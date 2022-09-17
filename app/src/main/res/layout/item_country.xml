@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/image_flag"
+        android:layout_width="100dp"
+        android:layout_height="60dp"/>
+
+    <TextView
+        android:id="@+id/name_country"
+        app:layout_constraintStart_toEndOf="@id/image_flag"
+        app:layout_constraintTop_toTopOf="@id/image_flag"
+        android:layout_marginStart="24dp"
+        android:text="Country"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/name_capital"
+        app:layout_constraintStart_toEndOf="@id/image_flag"
+        app:layout_constraintBottom_toBottomOf="@id/image_flag"
+        android:layout_marginStart="24dp"
+        android:text="Capital"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
